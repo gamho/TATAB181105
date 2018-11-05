@@ -23,6 +23,7 @@ public class LoginDAOImpl implements LoginDAO {
 	// 로그인 info db에 존재하는지 확인(검색)
 	@Override
 	public List<LoginVO> memberInfoFind(LoginVO loginVO) {
+		System.out.println("loginVO 체크 @@@@@@@@@@@@@@@ " + loginVO.toString());
 		return sqlSession.selectList("loginInfoFind", loginVO);
 	}
 

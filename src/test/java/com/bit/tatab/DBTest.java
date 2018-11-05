@@ -1,7 +1,6 @@
 package com.bit.tatab;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 
 import org.junit.Test;
 
@@ -16,10 +15,10 @@ public class DBTest {
    public void testConn() throws Exception{
       Class.forName(DRIVER);
       
-      try(Connection conn = (Connection) DriverManager.getConnection(URL, USER, PWD)){
-         System.out.println(conn);
-      }catch(Exception e) {
-         e.printStackTrace();
+      //try(Connection conn = (Connection) DriverManagernager.getConnection(URL, USER, PWD)){
+     //    System.out.println(conn);
+     // }catch(Exception e) {
+     //    e.printStackTrace();
       }
       
    
@@ -29,4 +28,3 @@ public class DBTest {
    
          
 
-}
